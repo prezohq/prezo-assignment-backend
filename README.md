@@ -10,7 +10,7 @@ You are building an API endpoint that can summarize text sent to it.
 
 - Create an API endpoint that accepts text input, wraps it in a full prompt and queries an Open AI model.
 
-- It should query OpenAI for text completion. You can create a free account on OpenAI and get free credits to use. You will need an API key from them.
+- It should query for text completion. (https://platform.openai.com/docs/guides/completion) You can create a free account on OpenAI and get free credits to use. You will need an API key from them.
 
 - Your API should return a JSON response of the result returned by OpenAI.
 
@@ -19,7 +19,7 @@ You are building an API endpoint that can summarize text sent to it.
 - Here are some pointers
 
   - Open AI can fail to serve results because their servers are overloaded
-  - Open AI could rate limit requests
+  - we could run into rate limit
   - The user could enter text that's unsafe/dangerous
   - What if the text to summarize is very long?
   - What if it takes a long time to summarize?
