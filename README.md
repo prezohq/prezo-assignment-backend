@@ -16,16 +16,13 @@ You are building an API endpoint that can summarize text sent to it.
 
 - How will you make this fault tolerant? Think about all the ways in which this simple endpoint can fail and write your ideas on how we can handle failures. If you code up mitigating solutions as part of the endpoint, even better.
 
-- Here are some pointers
+For instance:
+- OpenAI's servers could throw 500s
+- The input text could take a long time to summarize
 
-  - Open AI can fail to serve results because their servers are overloaded
-  - we could run into rate limit
-  - The user could enter text that's unsafe/dangerous
-  - What if the text to summarize is very long?
-  - What if it takes a long time to summarize?
-  - what else could go wrong?
+What about rate limits? What else should we consider?
 
-- You can use Python or Node or something else for this. 
+We work in python and javascript so prefer solutions in those languages, but you're free to use whichever language/framework you're most comfortable with.
 
 ## Deliverables
 
